@@ -1,0 +1,10 @@
+2020-05-12: 2.0.0 (517a2a7)
+- Initial release
+
+2020-05-13: 2.0.1 (12a028d)
+- Fix parsing of TFP response expected flag
+- Fix parsing of SPITFP acknowledgments
+
+2020-06-24: 2.0.2 (fae6a4e)
+- Port to Logic 2.3 API
+- Add CoMCU-Enumerate parsing support
