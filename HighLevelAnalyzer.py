@@ -1,7 +1,7 @@
 #############################################################
-# This file was automatically generated on 2020-06-24.      #
+# This file was automatically generated on 2021-02-10.      #
 #                                                           #
-# Saleae Bindings Version 2.0.3                             #
+# Saleae Bindings Version 2.0.4                             #
 #                                                           #
 # If you have a bugfix for this file and want to commit it, #
 # please fix the bug in the generator. You can find a link  #
@@ -12431,6 +12431,1298 @@ device_infos = {
         }
     }
 },
+2161: {
+    'device_identifier': 2161,
+    'name': 'IMU Bricklet 3.0',
+    'packets': {
+        1: {
+            'function_id': 1,
+            'name': 'Get Acceleration',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        2: {
+            'function_id': 2,
+            'name': 'Get Magnetic Field',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        3: {
+            'function_id': 3,
+            'name': 'Get Angular Velocity',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        4: {
+            'function_id': 4,
+            'name': 'Get Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'b',
+        },
+        5: {
+            'function_id': 5,
+            'name': 'Get Orientation',
+            'elements': [
+                {
+                    'name': 'Heading',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Roll',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Pitch',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        6: {
+            'function_id': 6,
+            'name': 'Get Linear Acceleration',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        7: {
+            'function_id': 7,
+            'name': 'Get Gravity Vector',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        8: {
+            'function_id': 8,
+            'name': 'Get Quaternion',
+            'elements': [
+                {
+                    'name': 'W',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h h',
+        },
+        9: {
+            'function_id': 9,
+            'name': 'Get All Data',
+            'elements': [
+                {
+                    'name': 'Acceleration',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Magnetic Field',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Angular Velocity',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Euler Angle',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Quaternion',
+                    'type': 'int16',
+                    'cardinality': '4',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Linear Acceleration',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Gravity Vector',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Temperature',
+                    'type': 'int8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Calibration Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '3h 3h 3h 3h 4h 3h 3h b B',
+        },
+        10: {
+            'function_id': 10,
+            'name': 'Save Calibration',
+            'elements': [
+                {
+                    'name': 'Calibration Done',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '!',
+        },
+        11: {
+            'function_id': 11,
+            'name': 'Set Sensor Configuration',
+            'elements': [
+                {
+                    'name': 'Magnetometer Rate',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Gyroscope Range',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Gyroscope Bandwidth',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Accelerometer Range',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Accelerometer Bandwidth',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B B B B B',
+            'out_struct_format': '',
+        },
+        12: {
+            'function_id': 12,
+            'name': 'Get Sensor Configuration',
+            'elements': [
+                {
+                    'name': 'Magnetometer Rate',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Gyroscope Range',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Gyroscope Bandwidth',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Accelerometer Range',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Accelerometer Bandwidth',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B B B B B',
+        },
+        13: {
+            'function_id': 13,
+            'name': 'Set Sensor Fusion Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        14: {
+            'function_id': 14,
+            'name': 'Get Sensor Fusion Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        15: {
+            'function_id': 15,
+            'name': 'Set Acceleration Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        16: {
+            'function_id': 16,
+            'name': 'Get Acceleration Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        17: {
+            'function_id': 17,
+            'name': 'Set Magnetic Field Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        18: {
+            'function_id': 18,
+            'name': 'Get Magnetic Field Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        19: {
+            'function_id': 19,
+            'name': 'Set Angular Velocity Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        20: {
+            'function_id': 20,
+            'name': 'Get Angular Velocity Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        21: {
+            'function_id': 21,
+            'name': 'Set Temperature Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        22: {
+            'function_id': 22,
+            'name': 'Get Temperature Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        23: {
+            'function_id': 23,
+            'name': 'Set Orientation Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        24: {
+            'function_id': 24,
+            'name': 'Get Orientation Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        25: {
+            'function_id': 25,
+            'name': 'Set Linear Acceleration Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        26: {
+            'function_id': 26,
+            'name': 'Get Linear Acceleration Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        27: {
+            'function_id': 27,
+            'name': 'Set Gravity Vector Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        28: {
+            'function_id': 28,
+            'name': 'Get Gravity Vector Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        29: {
+            'function_id': 29,
+            'name': 'Set Quaternion Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        30: {
+            'function_id': 30,
+            'name': 'Get Quaternion Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        31: {
+            'function_id': 31,
+            'name': 'Set All Data Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        32: {
+            'function_id': 32,
+            'name': 'Get All Data Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        33: {
+            'function_id': 33,
+            'name': 'Acceleration',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        34: {
+            'function_id': 34,
+            'name': 'Magnetic Field',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        35: {
+            'function_id': 35,
+            'name': 'Angular Velocity',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        36: {
+            'function_id': 36,
+            'name': 'Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'b',
+        },
+        37: {
+            'function_id': 37,
+            'name': 'Linear Acceleration',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        38: {
+            'function_id': 38,
+            'name': 'Gravity Vector',
+            'elements': [
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        39: {
+            'function_id': 39,
+            'name': 'Orientation',
+            'elements': [
+                {
+                    'name': 'Heading',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Roll',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Pitch',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h',
+        },
+        40: {
+            'function_id': 40,
+            'name': 'Quaternion',
+            'elements': [
+                {
+                    'name': 'W',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'X',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Y',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Z',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h h h h',
+        },
+        41: {
+            'function_id': 41,
+            'name': 'All Data',
+            'elements': [
+                {
+                    'name': 'Acceleration',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Magnetic Field',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Angular Velocity',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Euler Angle',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Quaternion',
+                    'type': 'int16',
+                    'cardinality': '4',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Linear Acceleration',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Gravity Vector',
+                    'type': 'int16',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Temperature',
+                    'type': 'int8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Calibration Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '3h 3h 3h 3h 4h 3h 3h b B',
+        },
+        234: {
+            'function_id': 234,
+            'name': 'Get SPITFP Error Count',
+            'elements': [
+                {
+                    'name': 'Error Count Ack Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Message Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Frame',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Overflow',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I I I',
+        },
+        235: {
+            'function_id': 235,
+            'name': 'Set Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        236: {
+            'function_id': 236,
+            'name': 'Get Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        237: {
+            'function_id': 237,
+            'name': 'Set Write Firmware Pointer',
+            'elements': [
+                {
+                    'name': 'Pointer',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        238: {
+            'function_id': 238,
+            'name': 'Write Firmware',
+            'elements': [
+                {
+                    'name': 'Data',
+                    'type': 'uint8',
+                    'cardinality': '64',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '64B',
+            'out_struct_format': 'B',
+        },
+        239: {
+            'function_id': 239,
+            'name': 'Set Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        240: {
+            'function_id': 240,
+            'name': 'Get Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        242: {
+            'function_id': 242,
+            'name': 'Get Chip Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        243: {
+            'function_id': 243,
+            'name': 'Reset',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        248: {
+            'function_id': 248,
+            'name': 'Write UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        249: {
+            'function_id': 249,
+            'name': 'Read UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        255: {
+            'function_id': 255,
+            'name': 'Get Identity',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H',
+        },
+        253: {
+            'function_id': 253,
+            'name': 'Enumerate',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Enumeration Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H B'
+        },
+        252: {
+            'function_id': 252,
+            'name': 'CoMCU Enumerate',
+            'elements': [],
+            'in_struct_format': '',
+            'out_struct_format': ''
+        }
+    }
+},
 2116: {
     'device_identifier': 2116,
     'name': 'Industrial Analog Out Bricklet 2.0',
@@ -15006,6 +16298,470 @@ device_infos = {
             ],
             'in_struct_format': 'B',
             'out_struct_format': 'i i B',
+        },
+        234: {
+            'function_id': 234,
+            'name': 'Get SPITFP Error Count',
+            'elements': [
+                {
+                    'name': 'Error Count Ack Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Message Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Frame',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Overflow',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I I I',
+        },
+        235: {
+            'function_id': 235,
+            'name': 'Set Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        236: {
+            'function_id': 236,
+            'name': 'Get Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        237: {
+            'function_id': 237,
+            'name': 'Set Write Firmware Pointer',
+            'elements': [
+                {
+                    'name': 'Pointer',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        238: {
+            'function_id': 238,
+            'name': 'Write Firmware',
+            'elements': [
+                {
+                    'name': 'Data',
+                    'type': 'uint8',
+                    'cardinality': '64',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '64B',
+            'out_struct_format': 'B',
+        },
+        239: {
+            'function_id': 239,
+            'name': 'Set Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        240: {
+            'function_id': 240,
+            'name': 'Get Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        242: {
+            'function_id': 242,
+            'name': 'Get Chip Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        243: {
+            'function_id': 243,
+            'name': 'Reset',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        248: {
+            'function_id': 248,
+            'name': 'Write UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        249: {
+            'function_id': 249,
+            'name': 'Read UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        255: {
+            'function_id': 255,
+            'name': 'Get Identity',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H',
+        },
+        253: {
+            'function_id': 253,
+            'name': 'Enumerate',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Enumeration Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H B'
+        },
+        252: {
+            'function_id': 252,
+            'name': 'CoMCU Enumerate',
+            'elements': [],
+            'in_struct_format': '',
+            'out_struct_format': ''
+        }
+    }
+},
+2162: {
+    'device_identifier': 2162,
+    'name': 'Industrial Dual AC Relay Bricklet',
+    'packets': {
+        1: {
+            'function_id': 1,
+            'name': 'Set Value',
+            'elements': [
+                {
+                    'name': 'Channel0',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Channel1',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': '! !',
+            'out_struct_format': '',
+        },
+        2: {
+            'function_id': 2,
+            'name': 'Get Value',
+            'elements': [
+                {
+                    'name': 'Channel0',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Channel1',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '! !',
+        },
+        3: {
+            'function_id': 3,
+            'name': 'Set Channel LED Config',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B B',
+            'out_struct_format': '',
+        },
+        4: {
+            'function_id': 4,
+            'name': 'Get Channel LED Config',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        5: {
+            'function_id': 5,
+            'name': 'Set Monoflop',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Time',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B ! I',
+            'out_struct_format': '',
+        },
+        6: {
+            'function_id': 6,
+            'name': 'Get Monoflop',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Time',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Time Remaining',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '! I I',
+        },
+        7: {
+            'function_id': 7,
+            'name': 'Monoflop Done',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B !',
+        },
+        8: {
+            'function_id': 8,
+            'name': 'Set Selected Value',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B !',
+            'out_struct_format': '',
         },
         234: {
             'function_id': 234,

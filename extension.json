@@ -1,5 +1,5 @@
 {
-  "version": "2.0.3",
+  "version": "2.0.4",
   "apiVersion": "1.0.0",
   "author": "Erik Fleckstein <erik@tinkerforge.com>",
   "description": "Tinkerforge SPITFP high level analyzer.",
