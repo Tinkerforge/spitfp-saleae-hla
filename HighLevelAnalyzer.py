@@ -1,7 +1,7 @@
 #############################################################
-# This file was automatically generated on 2021-02-10.      #
+# This file was automatically generated on 2021-01-15.      #
 #                                                           #
-# Saleae Bindings Version 2.0.4                             #
+# Saleae Bindings Version 2.0.5                             #
 #                                                           #
 # If you have a bugfix for this file and want to commit it, #
 # please fix the bug in the generator. You can find a link  #
@@ -28958,6 +28958,884 @@ device_infos = {
         }
     }
 },
+2156: {
+    'device_identifier': 2156,
+    'name': 'Performance DC Bricklet',
+    'packets': {
+        1: {
+            'function_id': 1,
+            'name': 'Set Enabled',
+            'elements': [
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': '!',
+            'out_struct_format': '',
+        },
+        2: {
+            'function_id': 2,
+            'name': 'Get Enabled',
+            'elements': [
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '!',
+        },
+        3: {
+            'function_id': 3,
+            'name': 'Set Velocity',
+            'elements': [
+                {
+                    'name': 'Velocity',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'h',
+            'out_struct_format': '',
+        },
+        4: {
+            'function_id': 4,
+            'name': 'Get Velocity',
+            'elements': [
+                {
+                    'name': 'Velocity',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        5: {
+            'function_id': 5,
+            'name': 'Get Current Velocity',
+            'elements': [
+                {
+                    'name': 'Velocity',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        6: {
+            'function_id': 6,
+            'name': 'Set Motion',
+            'elements': [
+                {
+                    'name': 'Acceleration',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Deceleration',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H H',
+            'out_struct_format': '',
+        },
+        7: {
+            'function_id': 7,
+            'name': 'Get Motion',
+            'elements': [
+                {
+                    'name': 'Acceleration',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Deceleration',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'H H',
+        },
+        8: {
+            'function_id': 8,
+            'name': 'Full Brake',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        9: {
+            'function_id': 9,
+            'name': 'Set Drive Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        10: {
+            'function_id': 10,
+            'name': 'Get Drive Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        11: {
+            'function_id': 11,
+            'name': 'Set PWM Frequency',
+            'elements': [
+                {
+                    'name': 'Frequency',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': '',
+        },
+        12: {
+            'function_id': 12,
+            'name': 'Get PWM Frequency',
+            'elements': [
+                {
+                    'name': 'Frequency',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'H',
+        },
+        13: {
+            'function_id': 13,
+            'name': 'Get Power Statistics',
+            'elements': [
+                {
+                    'name': 'Voltage',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Current',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Temperature',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'H H h',
+        },
+        14: {
+            'function_id': 14,
+            'name': 'Set Thermal Shutdown',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        15: {
+            'function_id': 15,
+            'name': 'Get Thermal Shutdown',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        16: {
+            'function_id': 16,
+            'name': 'Set GPIO Configuration',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Debounce',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Stop Deceleration',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B H H',
+            'out_struct_format': '',
+        },
+        17: {
+            'function_id': 17,
+            'name': 'Get GPIO Configuration',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Debounce',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Stop Deceleration',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'H H',
+        },
+        18: {
+            'function_id': 18,
+            'name': 'Set GPIO Action',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Action',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B I',
+            'out_struct_format': '',
+        },
+        19: {
+            'function_id': 19,
+            'name': 'Get GPIO Action',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Action',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'I',
+        },
+        20: {
+            'function_id': 20,
+            'name': 'Get GPIO State',
+            'elements': [
+                {
+                    'name': 'GPIO State',
+                    'type': 'bool',
+                    'cardinality': '2',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '2!',
+        },
+        21: {
+            'function_id': 21,
+            'name': 'Set Error LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        22: {
+            'function_id': 22,
+            'name': 'Get Error LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        23: {
+            'function_id': 23,
+            'name': 'Set CW LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        24: {
+            'function_id': 24,
+            'name': 'Get CW LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        25: {
+            'function_id': 25,
+            'name': 'Set CCW LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        26: {
+            'function_id': 26,
+            'name': 'Get CCW LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        27: {
+            'function_id': 27,
+            'name': 'Set GPIO LED Config',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B B',
+            'out_struct_format': '',
+        },
+        28: {
+            'function_id': 28,
+            'name': 'Get GPIO LED Config',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        29: {
+            'function_id': 29,
+            'name': 'Set Emergency Shutdown Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': '!',
+            'out_struct_format': '',
+        },
+        30: {
+            'function_id': 30,
+            'name': 'Get Emergency Shutdown Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '!',
+        },
+        31: {
+            'function_id': 31,
+            'name': 'Set Velocity Reached Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': '!',
+            'out_struct_format': '',
+        },
+        32: {
+            'function_id': 32,
+            'name': 'Get Velocity Reached Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '!',
+        },
+        33: {
+            'function_id': 33,
+            'name': 'Set Current Velocity Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        34: {
+            'function_id': 34,
+            'name': 'Get Current Velocity Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        35: {
+            'function_id': 35,
+            'name': 'Emergency Shutdown',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        36: {
+            'function_id': 36,
+            'name': 'Velocity Reached',
+            'elements': [
+                {
+                    'name': 'Velocity',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        37: {
+            'function_id': 37,
+            'name': 'Current Velocity',
+            'elements': [
+                {
+                    'name': 'Velocity',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        234: {
+            'function_id': 234,
+            'name': 'Get SPITFP Error Count',
+            'elements': [
+                {
+                    'name': 'Error Count Ack Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Message Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Frame',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Overflow',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I I I',
+        },
+        235: {
+            'function_id': 235,
+            'name': 'Set Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        236: {
+            'function_id': 236,
+            'name': 'Get Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        237: {
+            'function_id': 237,
+            'name': 'Set Write Firmware Pointer',
+            'elements': [
+                {
+                    'name': 'Pointer',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        238: {
+            'function_id': 238,
+            'name': 'Write Firmware',
+            'elements': [
+                {
+                    'name': 'Data',
+                    'type': 'uint8',
+                    'cardinality': '64',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '64B',
+            'out_struct_format': 'B',
+        },
+        239: {
+            'function_id': 239,
+            'name': 'Set Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        240: {
+            'function_id': 240,
+            'name': 'Get Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        242: {
+            'function_id': 242,
+            'name': 'Get Chip Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        243: {
+            'function_id': 243,
+            'name': 'Reset',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        248: {
+            'function_id': 248,
+            'name': 'Write UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        249: {
+            'function_id': 249,
+            'name': 'Read UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        255: {
+            'function_id': 255,
+            'name': 'Get Identity',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H',
+        },
+        253: {
+            'function_id': 253,
+            'name': 'Enumerate',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Enumeration Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H B'
+        },
+        252: {
+            'function_id': 252,
+            'name': 'CoMCU Enumerate',
+            'elements': [],
+            'in_struct_format': '',
+            'out_struct_format': ''
+        }
+    }
+},
 2145: {
     'device_identifier': 2145,
     'name': 'Piezo Speaker Bricklet 2.0',
@@ -36132,6 +37010,862 @@ device_infos = {
             ],
             'in_struct_format': '',
             'out_struct_format': '',
+        },
+        234: {
+            'function_id': 234,
+            'name': 'Get SPITFP Error Count',
+            'elements': [
+                {
+                    'name': 'Error Count Ack Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Message Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Frame',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Overflow',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I I I',
+        },
+        235: {
+            'function_id': 235,
+            'name': 'Set Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        236: {
+            'function_id': 236,
+            'name': 'Get Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        237: {
+            'function_id': 237,
+            'name': 'Set Write Firmware Pointer',
+            'elements': [
+                {
+                    'name': 'Pointer',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        238: {
+            'function_id': 238,
+            'name': 'Write Firmware',
+            'elements': [
+                {
+                    'name': 'Data',
+                    'type': 'uint8',
+                    'cardinality': '64',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '64B',
+            'out_struct_format': 'B',
+        },
+        239: {
+            'function_id': 239,
+            'name': 'Set Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        240: {
+            'function_id': 240,
+            'name': 'Get Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        242: {
+            'function_id': 242,
+            'name': 'Get Chip Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        243: {
+            'function_id': 243,
+            'name': 'Reset',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        248: {
+            'function_id': 248,
+            'name': 'Write UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        249: {
+            'function_id': 249,
+            'name': 'Read UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        255: {
+            'function_id': 255,
+            'name': 'Get Identity',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H',
+        },
+        253: {
+            'function_id': 253,
+            'name': 'Enumerate',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Enumeration Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H B'
+        },
+        252: {
+            'function_id': 252,
+            'name': 'CoMCU Enumerate',
+            'elements': [],
+            'in_struct_format': '',
+            'out_struct_format': ''
+        }
+    }
+},
+2157: {
+    'device_identifier': 2157,
+    'name': 'Servo Bricklet 2.0',
+    'packets': {
+        1: {
+            'function_id': 1,
+            'name': 'Get Status',
+            'elements': [
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '10',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Current Position',
+                    'type': 'int16',
+                    'cardinality': '10',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Current Velocity',
+                    'type': 'int16',
+                    'cardinality': '10',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Current',
+                    'type': 'uint16',
+                    'cardinality': '10',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Input Voltage',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '10! 10h 10h 10H H',
+        },
+        2: {
+            'function_id': 2,
+            'name': 'Set Enable',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Enable',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H !',
+            'out_struct_format': '',
+        },
+        3: {
+            'function_id': 3,
+            'name': 'Get Enabled',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Enable',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': '!',
+        },
+        4: {
+            'function_id': 4,
+            'name': 'Set Position',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H h',
+            'out_struct_format': '',
+        },
+        5: {
+            'function_id': 5,
+            'name': 'Get Position',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'h',
+        },
+        6: {
+            'function_id': 6,
+            'name': 'Get Current Position',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'h',
+        },
+        7: {
+            'function_id': 7,
+            'name': 'Get Current Velocity',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Velocity',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'H',
+        },
+        8: {
+            'function_id': 8,
+            'name': 'Set Motion Configuration',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Velocity',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Acceleration',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Deceleration',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H I I I',
+            'out_struct_format': '',
+        },
+        9: {
+            'function_id': 9,
+            'name': 'Get Motion Configuration',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Velocity',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Acceleration',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Deceleration',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'I I I',
+        },
+        10: {
+            'function_id': 10,
+            'name': 'Set Pulse Width',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Min',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Max',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H I I',
+            'out_struct_format': '',
+        },
+        11: {
+            'function_id': 11,
+            'name': 'Get Pulse Width',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Min',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Max',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'I I',
+        },
+        12: {
+            'function_id': 12,
+            'name': 'Set Degree',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Min',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Max',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H h h',
+            'out_struct_format': '',
+        },
+        13: {
+            'function_id': 13,
+            'name': 'Get Degree',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Min',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Max',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'h h',
+        },
+        14: {
+            'function_id': 14,
+            'name': 'Set Period',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H I',
+            'out_struct_format': '',
+        },
+        15: {
+            'function_id': 15,
+            'name': 'Get Period',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'I',
+        },
+        16: {
+            'function_id': 16,
+            'name': 'Get Servo Current',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Current',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'H',
+        },
+        17: {
+            'function_id': 17,
+            'name': 'Set Servo Current Configuration',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Averaging Duration',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H B',
+            'out_struct_format': '',
+        },
+        18: {
+            'function_id': 18,
+            'name': 'Get Servo Current Configuration',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Averaging Duration',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': 'B',
+        },
+        19: {
+            'function_id': 19,
+            'name': 'Set Input Voltage Configuration',
+            'elements': [
+                {
+                    'name': 'Averaging Duration',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        20: {
+            'function_id': 20,
+            'name': 'Get Input Voltage Configuration',
+            'elements': [
+                {
+                    'name': 'Averaging Duration',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        21: {
+            'function_id': 21,
+            'name': 'Get Overall Current',
+            'elements': [
+                {
+                    'name': 'Current',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'H',
+        },
+        22: {
+            'function_id': 22,
+            'name': 'Get Input Voltage',
+            'elements': [
+                {
+                    'name': 'Voltage',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'H',
+        },
+        23: {
+            'function_id': 23,
+            'name': 'Set Current Calibration',
+            'elements': [
+                {
+                    'name': 'Offset',
+                    'type': 'int16',
+                    'cardinality': '10',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': '10h',
+            'out_struct_format': '',
+        },
+        24: {
+            'function_id': 24,
+            'name': 'Get Current Calibration',
+            'elements': [
+                {
+                    'name': 'Offset',
+                    'type': 'int16',
+                    'cardinality': '10',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '10h',
+        },
+        25: {
+            'function_id': 25,
+            'name': 'Set Position Reached Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'H !',
+            'out_struct_format': '',
+        },
+        26: {
+            'function_id': 26,
+            'name': 'Get Position Reached Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Enabled',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'H',
+            'out_struct_format': '!',
+        },
+        27: {
+            'function_id': 27,
+            'name': 'Position Reached',
+            'elements': [
+                {
+                    'name': 'Servo Channel',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'H h',
         },
         234: {
             'function_id': 234,
