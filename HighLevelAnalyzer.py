@@ -1,7 +1,7 @@
 #############################################################
-# This file was automatically generated on 2021-05-06.      #
+# This file was automatically generated on 2022-05-11.      #
 #                                                           #
-# Saleae Bindings Version 2.0.6                             #
+# Saleae Bindings Version 2.0.7                             #
 #                                                           #
 # If you have a bugfix for this file and want to commit it, #
 # please fix the bug in the generator. You can find a link  #
@@ -270,6 +270,34 @@ device_infos = {
             ],
             'in_struct_format': '',
             'out_struct_format': 'H H',
+        },
+        9: {
+            'function_id': 9,
+            'name': 'Set RTC Driver',
+            'elements': [
+                {
+                    'name': 'RTC Driver',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        10: {
+            'function_id': 10,
+            'name': 'Get RTC Driver',
+            'elements': [
+                {
+                    'name': 'RTC Driver',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
         },
         234: {
             'function_id': 234,
@@ -10320,6 +10348,34 @@ device_infos = {
             'in_struct_format': '',
             'out_struct_format': 'B',
         },
+        16: {
+            'function_id': 16,
+            'name': 'Set Display Driver',
+            'elements': [
+                {
+                    'name': 'Display Driver',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        17: {
+            'function_id': 17,
+            'name': 'Get Display Driver',
+            'elements': [
+                {
+                    'name': 'Display Driver',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
         234: {
             'function_id': 234,
             'name': 'Get SPITFP Error Count',
@@ -11153,6 +11209,823 @@ device_infos = {
 276: {
     'device_identifier': 276,
     'name': 'GPS Bricklet 2.0',
+    'packets': {
+        1: {
+            'function_id': 1,
+            'name': 'Get Coordinates',
+            'elements': [
+                {
+                    'name': 'Latitude',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'NS',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Longitude',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'EW',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I c I c',
+        },
+        2: {
+            'function_id': 2,
+            'name': 'Get Status',
+            'elements': [
+                {
+                    'name': 'Has Fix',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Satellites View',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '! B',
+        },
+        3: {
+            'function_id': 3,
+            'name': 'Get Altitude',
+            'elements': [
+                {
+                    'name': 'Altitude',
+                    'type': 'int32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Geoidal Separation',
+                    'type': 'int32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'i i',
+        },
+        4: {
+            'function_id': 4,
+            'name': 'Get Motion',
+            'elements': [
+                {
+                    'name': 'Course',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Speed',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I',
+        },
+        5: {
+            'function_id': 5,
+            'name': 'Get Date Time',
+            'elements': [
+                {
+                    'name': 'Date',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Time',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I',
+        },
+        6: {
+            'function_id': 6,
+            'name': 'Restart',
+            'elements': [
+                {
+                    'name': 'Restart Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        7: {
+            'function_id': 7,
+            'name': 'Get Satellite System Status Low Level',
+            'elements': [
+                {
+                    'name': 'Satellite System',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Satellite Numbers Length',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Satellite Numbers Data',
+                    'type': 'uint8',
+                    'cardinality': '12',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Fix',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'PDOP',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'HDOP',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'VDOP',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B 12B B H H H',
+        },
+        8: {
+            'function_id': 8,
+            'name': 'Get Satellite Status',
+            'elements': [
+                {
+                    'name': 'Satellite System',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Satellite Number',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Elevation',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Azimuth',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'SNR',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B B',
+            'out_struct_format': 'h h h',
+        },
+        9: {
+            'function_id': 9,
+            'name': 'Set Fix LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        10: {
+            'function_id': 10,
+            'name': 'Get Fix LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        11: {
+            'function_id': 11,
+            'name': 'Set Coordinates Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        12: {
+            'function_id': 12,
+            'name': 'Get Coordinates Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        13: {
+            'function_id': 13,
+            'name': 'Set Status Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        14: {
+            'function_id': 14,
+            'name': 'Get Status Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        15: {
+            'function_id': 15,
+            'name': 'Set Altitude Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        16: {
+            'function_id': 16,
+            'name': 'Get Altitude Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        17: {
+            'function_id': 17,
+            'name': 'Set Motion Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        18: {
+            'function_id': 18,
+            'name': 'Get Motion Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        19: {
+            'function_id': 19,
+            'name': 'Set Date Time Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        20: {
+            'function_id': 20,
+            'name': 'Get Date Time Callback Period',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        21: {
+            'function_id': 21,
+            'name': 'Pulse Per Second',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        22: {
+            'function_id': 22,
+            'name': 'Coordinates',
+            'elements': [
+                {
+                    'name': 'Latitude',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'NS',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Longitude',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'EW',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I c I c',
+        },
+        23: {
+            'function_id': 23,
+            'name': 'Status',
+            'elements': [
+                {
+                    'name': 'Has Fix',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Satellites View',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '! B',
+        },
+        24: {
+            'function_id': 24,
+            'name': 'Altitude',
+            'elements': [
+                {
+                    'name': 'Altitude',
+                    'type': 'int32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Geoidal Separation',
+                    'type': 'int32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'i i',
+        },
+        25: {
+            'function_id': 25,
+            'name': 'Motion',
+            'elements': [
+                {
+                    'name': 'Course',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Speed',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I',
+        },
+        26: {
+            'function_id': 26,
+            'name': 'Date Time',
+            'elements': [
+                {
+                    'name': 'Date',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Time',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I',
+        },
+        27: {
+            'function_id': 27,
+            'name': 'Set SBAS Config',
+            'elements': [
+                {
+                    'name': 'SBAS Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        28: {
+            'function_id': 28,
+            'name': 'Get SBAS Config',
+            'elements': [
+                {
+                    'name': 'SBAS Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        234: {
+            'function_id': 234,
+            'name': 'Get SPITFP Error Count',
+            'elements': [
+                {
+                    'name': 'Error Count Ack Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Message Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Frame',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Overflow',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I I I',
+        },
+        235: {
+            'function_id': 235,
+            'name': 'Set Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        236: {
+            'function_id': 236,
+            'name': 'Get Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        237: {
+            'function_id': 237,
+            'name': 'Set Write Firmware Pointer',
+            'elements': [
+                {
+                    'name': 'Pointer',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        238: {
+            'function_id': 238,
+            'name': 'Write Firmware',
+            'elements': [
+                {
+                    'name': 'Data',
+                    'type': 'uint8',
+                    'cardinality': '64',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '64B',
+            'out_struct_format': 'B',
+        },
+        239: {
+            'function_id': 239,
+            'name': 'Set Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        240: {
+            'function_id': 240,
+            'name': 'Get Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        242: {
+            'function_id': 242,
+            'name': 'Get Chip Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        243: {
+            'function_id': 243,
+            'name': 'Reset',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        248: {
+            'function_id': 248,
+            'name': 'Write UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        249: {
+            'function_id': 249,
+            'name': 'Read UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        255: {
+            'function_id': 255,
+            'name': 'Get Identity',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H',
+        },
+        253: {
+            'function_id': 253,
+            'name': 'Enumerate',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Enumeration Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H B'
+        },
+        252: {
+            'function_id': 252,
+            'name': 'CoMCU Enumerate',
+            'elements': [],
+            'in_struct_format': '',
+            'out_struct_format': ''
+        }
+    }
+},
+2171: {
+    'device_identifier': 2171,
+    'name': 'GPS Bricklet 3.0',
     'packets': {
         1: {
             'function_id': 1,
@@ -27914,6 +28787,44 @@ device_infos = {
             ],
             'in_struct_format': '',
             'out_struct_format': 'H',
+        },
+        29: {
+            'function_id': 29,
+            'name': 'Simple Get Tag ID Low Level',
+            'elements': [
+                {
+                    'name': 'Index',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Tag Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Tag ID Length',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Tag ID Data',
+                    'type': 'uint8',
+                    'cardinality': '10',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Last Seen',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B B 10B I',
         },
         234: {
             'function_id': 234,
