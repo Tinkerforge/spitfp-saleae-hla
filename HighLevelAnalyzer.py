@@ -1,7 +1,7 @@
 #############################################################
-# This file was automatically generated on 2022-05-11.      #
+# This file was automatically generated on 2024-02-27.      #
 #                                                           #
-# Saleae Bindings Version 2.0.7                             #
+# Saleae Bindings Version 2.0.8                             #
 #                                                           #
 # If you have a bugfix for this file and want to commit it, #
 # please fix the bug in the generator. You can find a link  #
@@ -17813,6 +17813,484 @@ device_infos = {
             ],
             'in_struct_format': 'B',
             'out_struct_format': 'i i B',
+        },
+        234: {
+            'function_id': 234,
+            'name': 'Get SPITFP Error Count',
+            'elements': [
+                {
+                    'name': 'Error Count Ack Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Message Checksum',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Frame',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Error Count Overflow',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I I I I',
+        },
+        235: {
+            'function_id': 235,
+            'name': 'Set Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        236: {
+            'function_id': 236,
+            'name': 'Get Bootloader Mode',
+            'elements': [
+                {
+                    'name': 'Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        237: {
+            'function_id': 237,
+            'name': 'Set Write Firmware Pointer',
+            'elements': [
+                {
+                    'name': 'Pointer',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        238: {
+            'function_id': 238,
+            'name': 'Write Firmware',
+            'elements': [
+                {
+                    'name': 'Data',
+                    'type': 'uint8',
+                    'cardinality': '64',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Status',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '64B',
+            'out_struct_format': 'B',
+        },
+        239: {
+            'function_id': 239,
+            'name': 'Set Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': '',
+        },
+        240: {
+            'function_id': 240,
+            'name': 'Get Status LED Config',
+            'elements': [
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B',
+        },
+        242: {
+            'function_id': 242,
+            'name': 'Get Chip Temperature',
+            'elements': [
+                {
+                    'name': 'Temperature',
+                    'type': 'int16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'h',
+        },
+        243: {
+            'function_id': 243,
+            'name': 'Reset',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
+        248: {
+            'function_id': 248,
+            'name': 'Write UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I',
+            'out_struct_format': '',
+        },
+        249: {
+            'function_id': 249,
+            'name': 'Read UID',
+            'elements': [
+                {
+                    'name': 'UID',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I',
+        },
+        255: {
+            'function_id': 255,
+            'name': 'Get Identity',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H',
+        },
+        253: {
+            'function_id': 253,
+            'name': 'Enumerate',
+            'elements': [
+                {
+                    'name': 'Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Connected Uid',
+                    'type': 'string',
+                    'cardinality': '8',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Position',
+                    'type': 'char',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Hardware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Firmware Version',
+                    'type': 'uint8',
+                    'cardinality': '3',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Device Identifier',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Enumeration Type',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '8s 8s c 3B 3B H B'
+        },
+        252: {
+            'function_id': 252,
+            'name': 'CoMCU Enumerate',
+            'elements': [],
+            'in_struct_format': '',
+            'out_struct_format': ''
+        }
+    }
+},
+2174: {
+    'device_identifier': 2174,
+    'name': 'Industrial Dual AC In Bricklet',
+    'packets': {
+        1: {
+            'function_id': 1,
+            'name': 'Get Value',
+            'elements': [
+                {
+                    'name': 'Value',
+                    'type': 'bool',
+                    'cardinality': '2',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '2!',
+        },
+        2: {
+            'function_id': 2,
+            'name': 'Set Value Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B I !',
+            'out_struct_format': '',
+        },
+        3: {
+            'function_id': 3,
+            'name': 'Get Value Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'I !',
+        },
+        4: {
+            'function_id': 4,
+            'name': 'Set All Value Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'I !',
+            'out_struct_format': '',
+        },
+        5: {
+            'function_id': 5,
+            'name': 'Get All Value Callback Configuration',
+            'elements': [
+                {
+                    'name': 'Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value Has To Change',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'I !',
+        },
+        6: {
+            'function_id': 6,
+            'name': 'Set Channel LED Config',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B B',
+            'out_struct_format': '',
+        },
+        7: {
+            'function_id': 7,
+            'name': 'Get Channel LED Config',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Config',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': 'B',
+            'out_struct_format': 'B',
+        },
+        8: {
+            'function_id': 8,
+            'name': 'Value',
+            'elements': [
+                {
+                    'name': 'Channel',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Changed',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B ! !',
+        },
+        9: {
+            'function_id': 9,
+            'name': 'All Value',
+            'elements': [
+                {
+                    'name': 'Changed',
+                    'type': 'bool',
+                    'cardinality': '2',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Value',
+                    'type': 'bool',
+                    'cardinality': '2',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '2! 2!',
         },
         234: {
             'function_id': 234,
@@ -44056,6 +44534,139 @@ device_infos = {
             'in_struct_format': '',
             'out_struct_format': 'H H H H H H H H',
         },
+        16: {
+            'function_id': 16,
+            'name': 'Set FFC Shutter Mode',
+            'elements': [
+                {
+                    'name': 'Shutter Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Temp Lockout State',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Video Freeze During FFC',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'FFC Desired',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Elapsed Time Since Last FFC',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Desired FFC Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Explicit Cmd To Open',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Desired FFC Temp Delta',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                },
+                {
+                    'name': 'Imminent Delay',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'in'
+                }
+            ],
+            'in_struct_format': 'B B ! ! I I ! H H',
+            'out_struct_format': '',
+        },
+        17: {
+            'function_id': 17,
+            'name': 'Get FFC Shutter Mode',
+            'elements': [
+                {
+                    'name': 'Shutter Mode',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Temp Lockout State',
+                    'type': 'uint8',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Video Freeze During FFC',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'FFC Desired',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Elapsed Time Since Last FFC',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Desired FFC Period',
+                    'type': 'uint32',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Explicit Cmd To Open',
+                    'type': 'bool',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Desired FFC Temp Delta',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                },
+                {
+                    'name': 'Imminent Delay',
+                    'type': 'uint16',
+                    'cardinality': '1',
+                    'direction': 'out'
+                }
+            ],
+            'in_struct_format': '',
+            'out_struct_format': 'B B ! ! I I ! H H',
+        },
+        18: {
+            'function_id': 18,
+            'name': 'Run FFC Normalization',
+            'elements': [
+                
+            ],
+            'in_struct_format': '',
+            'out_struct_format': '',
+        },
         234: {
             'function_id': 234,
             'name': 'Get SPITFP Error Count',
@@ -46761,15 +47372,15 @@ pearson = [1, 87, 49, 12, 176, 178, 102, 166, 121, 193, 6, 84, 249, 230, 44, 163
 	140, 36, 210, 172, 41, 54, 159, 8, 185, 232, 113, 196, 231, 47, 146, 120,
 	51, 65, 28, 144, 254, 221, 93, 189, 194, 139, 112, 43, 71, 109, 184, 209]
 
-#checksum = 0
-#packet = [0x0B, # Paketlänge
-          #0x01, # Sequenznummer
-          #0x98, 0x83, 0x00, 0x00, 0x08, 0x01, 0x18, 0x00 # Payload
-          #]
-#packet = [0x03, 0x10, 0x00]
-#for byte in packet:
-    #checksum = pearson[checksum ^ byte]
-#print("{:x}".format(checksum))
+# checksum = 0
+# packet = [0x0B, # packet length
+#           0x01, # sequence number 1 ACK 0
+#           0x98, 0x83, 0x00, 0x00, 0x08, 0x01, 0x18, 0x00 # Payload
+#          ]
+# packet = [0x03, 0x10, 0x00]
+# for byte in packet:
+#     checksum = pearson[checksum ^ byte]
+# print("{:x}".format(checksum))
 
 
 def get_uid_from_data(data):
@@ -46830,7 +47441,16 @@ class PacketBuffer():
         while len(self.data) > 0:
             packet_len = self.data[0]
             if packet_len < 3 or packet_len > 83:
+                start_time = self.frame_start_times[0]
+                end_time = self.frame_end_times[0]
                 self.remove(1)
+                if packet_len != 0:
+                    return AnalyzerFrame('Unexpected', start_time, end_time, {
+                            'input_type': frame_type,
+                            'length': packet_len,
+                            'payload': str(packet_len)
+                        }
+                    )
                 continue
 
             if packet_len > len(self.data):
@@ -46843,7 +47463,15 @@ class PacketBuffer():
                 real_checksum = pearson[real_checksum ^ byte]
 
             if real_checksum != packet_checksum:
+                start_time = self.frame_start_times[0]
+                end_time = self.frame_end_times[0]
                 self.remove(1)
+                return AnalyzerFrame('Wrong Checksum', start_time, end_time, {
+                            'input_type': frame_type,
+                            'length': packet_len,
+                            'payload': str(packet_len)
+                        }
+                    )
                 continue
 
             seq_num = self.data[1] & 0x0F
@@ -46948,8 +47576,14 @@ class Hla(HighLevelAnalyzer):
             'format': 'SPITFP [Len: {{data.length}}, SeqNum: {{data.seq_num}}, ACK: {{data.seq_num_acked}}], Checksum: {{data.checksum}}'
         },
         'Invalid': {
-            'format': 'SPITFP [Len: {{data.length}}, SeqNum: {{data.seq_num}}, ACK: {{data.seq_num_acked}}], (Invalid!) SPITFP payload[{{data.payload}}] Checksum: {{data.checksum}}'
-        }
+            'format': 'ERROR INVALID [Len: {{data.length}}, SeqNum: {{data.seq_num}}, ACK: {{data.seq_num_acked}}], (Invalid!) SPITFP payload[{{data.payload}}] Checksum: {{data.checksum}}'
+        },
+        'Unexpected': {
+            'format': 'ERROR UNEXPECTED'
+        },
+        'Wrong Checksum': {
+            'format': 'ERROR WRONG CHECKSUM OR UNEXPECTED BYTE'
+        },
     }
 
     def __init__(self):
